@@ -332,6 +332,7 @@ a:hover {
     .reason, .first {
         margin: 0px !important;
         width: 70vw;
+        height: auto;
     }
 
     .reason img {

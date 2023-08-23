@@ -353,12 +353,12 @@ a:hover {
     }
 
     .statistic, .first {
-        margin: 0px !important;
+        margin: 5px !important;
         width: 70vw;
     }
 
     .server_ip {
-        width: 100vw;
+        width: 80vw;
     }
 }
 
