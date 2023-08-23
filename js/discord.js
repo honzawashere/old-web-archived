@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#member_count").innerHTML = json.guild.members
     }
 
-    xhr.open("GET", "./api/discord")
+    xhr.open("GET", "https://piwko-web.onrender.com/api/discord")
     xhr.send()
 })
