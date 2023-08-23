@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    background: black;
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.background {
+    background: url(web/img/piwko_tesco.png) no-repeat center;
+    background-size: cover;
+    filter: blur(7px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 50%;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s background-color, 0.3s border-bottom-color;
+}
+
+.menu2{
+    display:none;
+    height:58px;
+    top:10px;
+    position:absolute;
+    right:10px;
+}
+
+.mb{
+    height:4px;
+    width:55px;
+    background-color: black;
+}
+
+.lista{
+    position:absolute;
+    right:0px;
+    top:120px;
+    width:200px;
+    transform: translateX(100%);
+    transition:1s transform ease;
+}
+
+.clicked {
+    transform: translateX(0%) !important;
+    right: 20px;
+}
+
+.lista_options {
+    display: none;
+}
+
+.lista_option {
+    display: none;
+}
+
+@media only screen and (max-width:1024px) {
+    .menu, .option {
+        display: none;
+    }
+
+    .lista_option {
+        display: block;
+    }
+
+    .lista_options {
+        display: block;
+    }
+
+    .menu2 {
+        display: block;
+        background-color: rgb(255 255 255 / 0%);
+        border: 1px solid transparent;
+    }
+
+    .menu2:hover {
+        cursor: pointer;
+    }
+
+    .lista {
+        border: transparent 0px solid;
+        top: 8vh;
+        position: fixed;
+        padding: 20px;
+        background: black;
+        border-radius: 10px
+    }
+
+    .lista_option {
+        padding: 10px 0px;
+        color: white;
+        transition: 0.2s color, 0.2s background-color;
+        position: relative;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 16px;
+    }
+
+    .lista_option a {
+        color: white;
+        margin-left: 10px;
+    }
+
+    .lista_options {
+        position: relative;
+        margin: 0 !important;
+        display: grid;
+    }
+
+    .lista_option:hover {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .mb {
+        height: 4px;
+        width: 35px;
+        background-color: white;
+        margin-bottom: 8px;
+    }
+
+    .ma1, .ma2, .ma3 {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.scrolled {
+    background-color: black;
+    border-bottom: 1px solid #1e1e1e;
+}
+
+.middle_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.middle_container h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+}
+
+.middle_container h2 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+.icon {
+    opacity: 100%;
+    transition: 0.3s opacity;
+    width: 70px;
+    height: 70px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.option {
+    color: white;
+    padding: 25px;
+    transition: 0.3s color;
+}
+
+.logo {
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.icon img:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.option a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s color;
+}
+
+.option a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.info {
+    position: absolute;
+    top: 100vh;
+    height: 60vh;
+    background: black;
+    width: 100%;
+}
+
+.info_container {
+    color: white;
+    position: relative;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.info_container h1 {
+    text-align: center
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    padding: 25px 0px;
+    width: 100%;
+    background: black;
+}
+
+footer h1 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    background: black;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 16px;
+}
+
+.statistics {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.statistic {
+    width: 20vw;
+    height: 10vh;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #1e1e1e;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+
+.statistic:hover {
+    border: 1px solid #ff0000;
+    background-color: rgba(255, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.first {
+    margin-left: 20px;
+}
+
+.statistic_title {
+    position: relative;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.statistic_description {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.statistic_description h1 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.guild_widget_container {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.guild_widget {
+    width: 40vw;
+    height: 20vh;
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.3);
+}
+
+.guild_content {
+    position: relative;
+    height: 100%;
+    display: flex
+}
+
+.guild_content h1 {
+    padding-top: 90%;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.guild_content button {
+    background: white;
+    color: red;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 10px 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: 0.2s background-color, 0.2s color;
+}
+
+.guild_content button:hover {
+    background: red;
+    cursor: pointer;
+    color: white;
+}
+
+.guild_content img {
+    border: 1px solid transparent;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.guild_info {
+    position: relative;
+    left: 20px;
+}
+
+@media screen and (max-width: 720px) {
+    .statistics {
+        display: grid !important;
+        margin-bottom: 10px;
+    }
+
+    .statistic, .first {
+        margin: 0px !important;
+        width: 70vw;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .statistic {
+        height: 30vh;
+    }
+}
