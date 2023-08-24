@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: black;
+    background: #0e0e0e;
     font-family: 'Nunito Sans', sans-serif;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -40,7 +40,7 @@ body {
 .mb{
     height:4px;
     width:55px;
-    background-color: black;
+    background-color: #0e0e0e;
 }
 
 .lista{
@@ -93,7 +93,7 @@ body {
         top: 8vh;
         position: fixed;
         padding: 20px;
-        background: black;
+        background: #0e0e0e;
         border-radius: 10px
     }
 
@@ -131,13 +131,13 @@ body {
     }
 
     .ma1, .ma2, .ma3 {
-        color: black;
+        color: #0e0e0e;
         text-decoration: none;
     }
 }
 
 .scrolled {
-    background-color: black;
+    background-color: #0e0e0e;
     border-bottom: 1px solid #1e1e1e;
 }
 
@@ -208,7 +208,7 @@ body {
     position: absolute;
     top: 100vh;
     height: 60vh;
-    background: black;
+    background: #0e0e0e;
     width: 100%;
 }
 
@@ -229,7 +229,7 @@ footer {
     bottom: 0;
     padding: 25px 0px;
     width: 100%;
-    background: black;
+    background: #0e0e0e;
 }
 
 footer h1 {
@@ -252,7 +252,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar {
-    background: black;
+    background: #0e0e0e;
     width: 5px;
 }
 
@@ -272,16 +272,10 @@ a:hover {
     width: 20vw;
     height: 10vh;
     padding: 20px;
-    background-color: transparent;
+    background-color: #1e1e1e;
     border: 1px solid #1e1e1e;
     border-radius: 16px;
     margin-right: 20px;
-}
-
-.statistic:hover {
-    border: 1px solid #ff0000;
-    background-color: rgba(255, 0, 0, 0.2);
-    cursor: pointer;
 }
 
 .first {
