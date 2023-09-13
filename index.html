@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <title>@honzawashere</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/lanyard.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+          rel="stylesheet">
+</head>
+<body onload="make_lanyard_work(); handle_clicks(); phone_sidebar()">
+<div class="main-page main-page-hidden" id="main_page">
+    <div class="sidebar">
+        <div class="title">
+            <h1>honzawashere</h1>
+        </div>
+        <div class="menu">
+            <div class="menu-option option-selected" id="menu_option_1">who am I</div>
+            <div class="menu-option" id="menu_option_2">how to contact me</div>
+            <div class="menu-option" id="menu_option_3">my skills</div>
+        </div>
+        <div class="activity-container hidden" id="activity_container">
+            <h1 id="activity_title">My activity</h1>
+            <div class="activity">
+                <div class="activity-image">
+                    <img src="" id="activity_image" class="activity-image">
+                </div>
+                <div class="activity-info">
+                    <h1 id="activity_name">Activity name</h1>
+                    <a id="activity_state" class="no-hover">Activity state</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-phone">
+        <div class="sidebar-phone-title">
+            <h1>honzawashere</h1>
+        </div>
+        <div class="sidebar-menu-icon">
+            <div id="open_button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+            <div id="close_button" class="hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </div>
+        </div>
+        <div class="menu-list-phone hidden" id="menu_list_phone">
+            <div class="menu-phone">
+                <div class="menu-option option-selected" id="menu_option_1_phone">who am I</div>
+                <div class="menu-option" id="menu_option_2_phone">how to contact me</div>
+                <div class="menu-option" id="menu_option_3_phone">my skills</div>
+            </div>
+        </div>
+    </div>
+    <div class="description" id="description_1">
+        <h1>Who Am I</h1>
+        <br>
+        <h3>My name is Honza Cieslar, but you can call me honzawashere. I am a 16y/o developer, gamer and music
+            enjoyer. I live in Czech Republic.</h3>
+        <br>
+        <h3>In this time I am a student in school, but in my free time I love to code and learn new things. More
+            about my skills can be seen in <a id="my-skills-redirect">my skills</a>.</h3>
+        <br>
+        <h2>Music And I</h2>
+        <h3>I am addicted to music. I listen to music when I code, when I sleep, when I play games and when I have
+            time. My most favorite bands are: <a
+                    href="https://open.spotify.com/artist/7K3zpFXBvPcvzhj7zlGJdO?si=d5874a2e1dbd4b12">Crystal
+                Castles</a>, <a
+                    href="https://open.spotify.com/artist/1ARDx2oCR7sJEjbnHsbbRU?si=5c3403722c204846">CRIM3S</a>,
+            <a href="https://open.spotify.com/artist/0Y6dVaC9DZtPNH4591M42W?si=XC9982xiRMGCWzI90uPtzA">TV Girl</a>
+            and more. </h3>
+        <br>
+        <h2>My coding journey</h2>
+        <h3>My coding journey started at 2020 when I was trying to create my first Discord bot for one of my friend's
+            server. First language I learned due to this was Node.js (JavaScript). This helped me with learning more
+            languages. Python, Java, C#, C++ and more.</h3>
+        <br>
+        <h3>This year, 2023 I am using only JavaScript, Python, Java and HTML and I am creating websites or APIs for
+            others. I am now working on my all in one Discord bot called "Art".</h3>
+    </div>
+    <div class="description description-hidden" id="description_2">
+        <h1>How To Contact Me</h1>
+        <br>
+        <h3>There are lots of ways how you can contact me. I will leave you list of my social sites here:</h3>
+        <br>
+        <div class="social-container instagram">
+            <div class="social-image">
+                <img src="./img/instagram.png">
+            </div>
+            <div class="social-info">
+                <h2>Instagram</h2>
+                <h3><a href="https://instagram.com/honzawashere">@honzawashere</a>, <a
+                        href="https://instagram.com/honzawasnothere">@honzawasnothere</a></h3>
+            </div>
+        </div>
+        <div class="social-container snapchat">
+            <div class="social-image">
+                <img src="./img/snapchat.png">
+            </div>
+            <div class="social-info">
+                <h2>Snapchat</h2>
+                <h3><a class="no-hover">@honzawashere</a></h3>
+            </div>
+        </div>
+        <div class="social-container github">
+            <div class="social-image">
+                <img src="./img/github.png">
+            </div>
+            <div class="social-info">
+                <h2>Github</h2>
+                <h3><a href="https://github.com/honzawashere">@honzawashere</a></h3>
+            </div>
+        </div>
+        <div class="social-container reddit">
+            <div class="social-image">
+                <img src="./img/reddit.png">
+            </div>
+            <div class="social-info">
+                <h2>Reddit</h2>
+                <h3><a href="https://www.reddit.com/u/honzawashere">@honzawashere</a></h3>
+            </div>
+        </div>
+        <div class="social-container steam">
+            <div class="social-image">
+                <img src="./img/steam.png">
+            </div>
+            <div class="social-info">
+                <h2>Steam</h2>
+                <h3><a href="https://steamcommunity.com/id/honzawashere/">@honzawashere</a></h3>
+            </div>
+        </div>
+        <div class="social-container spotify">
+            <div class="social-image">
+                <img src="./img/spotify.png">
+            </div>
+            <div class="social-info">
+                <h2>Spotify</h2>
+                <h3><a href="https://open.spotify.com/user/31wmikhwwytv6ar2v3lj34bglx5q">@honzawashere</a></h3>
+            </div>
+        </div>
+        <div class="social-container youtube">
+            <div class="social-image">
+                <img src="./img/youtube.png">
+            </div>
+            <div class="social-info">
+                <h2>YouTube</h2>
+                <h3><a href="https://www.youtube.com/channel/UC34Tw925WMnVFrSth3YbIOg">@honzawashere</a></h3>
+            </div>
+        </div>
+        <div class="social-container discord">
+            <div class="social-image">
+                <img src="./img/discord.png">
+            </div>
+            <div class="social-info">
+                <h2>Discord</h2>
+                <h3><a class="no-hover">@honzawashere</a></h3>
+            </div>
+        </div>
+    </div>
+    <div class="description description-hidden" id="description_3">
+        <h1>My skills</h1>
+        <br>
+        <h3>Since 2020 I have started my coding journey that still continues. I also manage few projects and leave links
+            for them. Here is my list of languages and projects.</h3>
+        <br>
+        <div class="language-container">
+            <div class="language-image">
+                <img src="./img/javascript.png">
+            </div>
+            <div class="language-info">
+                <h2>JavaScript</h2>
+            </div>
+        </div>
+        <div class="language-container">
+            <div class="language-image">
+                <img src="./img/python.png">
+            </div>
+            <div class="language-info">
+                <h2>Python</h2>
+            </div>
+        </div>
+        <div class="language-container">
+            <div class="language-image">
+                <img src="./img/java.png">
+            </div>
+            <div class="language-info">
+                <h2>Java</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="particles-js"></div>
+<div class="page-container" id="page_container">
+    <h1>@honzawashere</h1>
+    <h2>16y/o gamer, coder x music enjoyer</h2>
+    <button class="click-me-button" onclick="click_me_clicked()">Click me!</button>
+</div>
+
+<script src="./js/particles.min.js"></script>
+<script src="./js/particles.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+body {
+    background: black;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    user-select: none;
+    height: 100vh;
+}
+
+.page-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 0.5s opacity ease;
+}
+
+.page-container-hidden {
+    opacity: 0%;
+}
+
+.page-container h1 {
+    margin: 0;
+    color: white;
+}
+
+.page-container h2 {
+    margin: 0;
+    color: white;
+    font-weight: 400;
+}
+
+.click-me-button {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-family: 'Nunito', sans-serif;
+}
+
+.click-me-button:hover {
+    color: mediumpurple;
+    cursor: pointer;
+    transition: 0.2s color;
+}
+
+.main-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    opacity: 100%;
+    transition: 0.5s opacity ease;
+}
+
+.main-page-hidden {
+    opacity: 0%;
+}
+
+.main-page h1 {
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 15rem;
+    border-right: 1px solid #141414
+}
+
+.title {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    padding: 50px 30px 20px;
+}
+
+.title h1 {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+}
+
+.menu {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    padding: 30px;
+    height: 50%;
+}
+
+.menu-phone {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    padding: 30px;
+    height: 50%;
+}
+
+.menu-phone .menu-option {
+    padding: 15px 0px;
+}
+
+.menu-option {
+    padding: 5px 0px;
+    font-size: 18px;
+    color: lightgrey;
+    font-weight: 500;
+}
+
+.menu-option:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.2s color;
+}
+
+.description {
+    position: fixed;
+    top: 0;
+    padding-top: 50px;
+    padding-left: 30px;
+    left: 15rem;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    z-index: -1;
+}
+
+.description h1 {
+    font-size: 32px;
+    margin: 0;
+    padding-bottom: 10px;
+    width: 35rem;
+}
+
+.description h2 {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+    color: white;
+    width: 35rem;
+    font-weight: 800;
+}
+
+.description h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: lightgrey;
+    margin: 0;
+    width: 35rem;
+    padding-bottom: 10px;
+}
+
+a {
+    color: mediumpurple;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px
+}
+
+.option-selected {
+    color: mediumpurple;
+}
+
+.option-selected:hover {
+    color: mediumpurple !important;
+}
+
+.description-hidden {
+    display: none;
+}
+
+.social-container {
+    width: 30rem;
+    background: black;
+    border: 1px solid #141414;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.social-image {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+}
+
+.social-image img {
+    -webkit-user-drag: none;
+}
+
+.social-info {
+    height: 100px;
+}
+
+.social-info h2 {
+    position: relative;
+    margin-left: 20px;
+    padding-top: 4vh;
+    padding-bottom: 5px !important;
+}
+
+.social-info h3 {
+    margin-left: 20px !important;
+}
+
+.no-hover:hover {
+    text-decoration: none !important;
+}
+
+.language-container {
+    width: 40vw;
+    background: black;
+    border: 1px solid #141414;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.language-image {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+}
+
+.language-image img {
+    -webkit-user-drag: none;
+}
+
+.language-info {
+    height: 100px;
+}
+
+.language-info h2 {
+    position: relative;
+    margin-left: 20px;
+    padding-top: 70px;
+    padding-bottom: 5px !important;
+}
+
+.language-info h3 {
+    margin-left: 20px;
+}
+
+.no-hover:hover {
+    cursor: default;
+}
+
+.activity-container {
+    position: absolute;
+    bottom: 0;
+    width: 15rem;
+    border-top: 1px solid #141414;
+    background: black
+}
+
+.activity-container h1 {
+    font-size: 0.83em;
+    font-weight: 800;
+    padding: 20px 20px 10px;
+    margin: 0;
+}
+
+.activity {
+    padding: 0px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.activity-container img {
+    position: relative;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.activity-info {
+    position: relative;
+    right: 0;
+    margin-left: 10px;
+}
+
+.activity-info h1 {
+    color: white;
+    font-size: 0.83em;
+    font-weight: 800;
+    padding: 0px !important;
+    margin-bottom: 0px;
+}
+
+.activity-info a {
+    color: lightgrey;
+    font-weight: 400;
+    font-size: 0.83em;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.activity-container:hover {
+    background: #141414;
+    cursor: pointer;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 100%;
+    filter: blur(4px);
+    transition: 0.5s opacity ease;
+}
+
+.particles-hide {
+    display: none;
+}
+
+.sidebar-phone {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    height: 65px;
+    border: 1px solid #141414;
+    display: none;
+}
+
+.sidebar-phone-title h1 {
+    font-size: 18px;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    position: relative;
+}
+
+.sidebar-menu-icon {
+    position: fixed;
+    right: 0;
+    padding: 23px 30px 23px 30px;
+}
+
+.sidebar-menu-icon svg {
+    position: relative;
+}
+
+.sidebar-menu-icon:hover {
+    cursor: pointer;
+}
+
+.menu-list-phone {
+    position: fixed;
+    top: 65px;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+
+@media only screen and (max-height:400px) {
+    .activity-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-phone {
+        display: flex;
+    }
+
+    .description {
+        position: fixed;
+        top: 65px;
+        padding-top: 30px;
+        padding-left: 30px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow-y: scroll;
+    }
+
+    .description h3 {
+        font-size: 16px;
+        font-weight: 400;
+        color: lightgrey;
+        margin: 0;
+        width: 60vw;
+        padding-bottom: 10px;
+    }
+
+    .social-container {
+        width: 80vw
+    }
+}
