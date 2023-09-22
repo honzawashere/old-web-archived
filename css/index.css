@@ -126,7 +126,6 @@ body {
     bottom: 0;
     right: 0;
     overflow-y: scroll;
-    z-index: -1;
 }
 
 .description h1 {
