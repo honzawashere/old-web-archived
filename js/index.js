@@ -75,13 +75,13 @@ function phone_sidebar() {
 
         document.querySelector("#menu_list_phone").classList.remove("hidden")
 
-        if(!document.querySelector("#description_1").classList.includes("description_hidden")) {
+        if(document.querySelector("#menu_option_1").classList.contains("option-selected")) {
             last_choice = 1
         }
-        if(!document.querySelector("#description_2").classList.includes("description_hidden")) {
+        if(document.querySelector("#menu_option_2").classList.contains("option-selected")) {
             last_choice = 2
         }
-        if(!document.querySelector("#description_3").classList.includes("description_hidden")) {
+        if(document.querySelector("#menu_option_3").classList.contains("option-selected")) {
             last_choice = 3
         }
 
@@ -95,14 +95,17 @@ function phone_sidebar() {
 
         document.querySelector("#menu_list_phone").classList.add("hidden")
 
-        if(last_choice === 1) {
-            document.querySelector("#description_1").classList.remove("description_hidden")
+        if(last_choice == 1) {
+            document.querySelector("#description_1").classList.remove("description-hidden")
+            console.log(".")
         }
-        if(last_choice === 2) {
-            document.querySelector("#description_2").classList.remove("description_hidden")
+        else if(last_choice == 2) {
+            document.querySelector("#description_2").classList.remove("description-hidden")
+            console.log("..")
         }
-        if(last_choice === 3) {
-            document.querySelector("#description_3").classList.remove("description_hidden")
+        else if(last_choice == 3) {
+            document.querySelector("#description_3").classList.remove("description-hidden")
+            console.log("... ")
         }
     }
     document.querySelector("#menu_option_1_phone").onclick = () => {
