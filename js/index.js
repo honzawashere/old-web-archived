@@ -75,13 +75,13 @@ function phone_sidebar() {
 
         document.querySelector("#menu_list_phone").classList.remove("hidden")
 
-        if(!document.querySelector("#description_1").classList.includes("description_hidden") {
+        if(!document.querySelector("#description_1").classList.includes("description_hidden")) {
             last_choice = 1
         }
-        if(!document.querySelector("#description_2").classList.includes("description_hidden") {
+        if(!document.querySelector("#description_2").classList.includes("description_hidden")) {
             last_choice = 2
         }
-        if(!document.querySelector("#description_3").classList.includes("description_hidden") {
+        if(!document.querySelector("#description_3").classList.includes("description_hidden")) {
             last_choice = 3
         }
 
