@@ -31,7 +31,7 @@ function make_lanyard_work() {
                 const d = data.d["900801159424512020"]
                 if (d.activities.length === 0) return document.querySelector("#activity_container").classList.add("hidden")
                 if (d.activities[0].id !== "spotify:1") {
-                    if (d.activities[0].id === "ef12ade3b96ec3d4") {
+                    if (d.activities[0].name === "YouTube Music") {
                         const a = d.activities[0]
                         setTimeout(() => {
                             c()
@@ -94,7 +94,7 @@ function make_lanyard_work() {
             if (data.t === "PRESENCE_UPDATE") {
                 const d = data.d
                 if (d.activities.length === 0) return document.querySelector("#activity_container").classList.add("hidden")
-                if (d.activities[0].id === "ef12ade3b96ec3d4") {
+                if (d.activities[0].name === "YouTube Music") {
                     const a = d.activities[0]
                     setTimeout(() => {
                         c()
