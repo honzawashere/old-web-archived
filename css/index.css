@@ -525,3 +525,58 @@ canvas {
         width: 80vw
     }
 }
+
+.javascript {
+    background: black;
+    background: radial-gradient(circle, #f7df1e21 10%, rgba(0,0,0,1) 100%);
+}
+
+.python {
+    background: black;
+    background: radial-gradient(circle, #3670a021 10%, rgba(0,0,0,1) 100%);
+}
+
+.java {
+    background: black;
+    background: radial-gradient(circle, #ec202521 10%, rgba(0,0,0,1) 100%);
+}
+
+.instagram {
+    background: black;
+    background: radial-gradient(circle, #7b33f821 10%, rgba(0,0,0,1) 100%);
+}
+
+.snapchat {
+    background: black;
+    background: radial-gradient(circle, #ffc70021 10%, rgba(0,0,0,1) 100%);
+}
+
+.github {
+    background: black;
+    background: radial-gradient(circle, #1b1f2321 10%, rgba(0,0,0,1) 100%);
+}
+
+.reddit {
+    background: black;
+    background: radial-gradient(circle, #ff450021 10%, rgba(0,0,0,1) 100%);
+}
+
+.steam {
+    background: black;
+    background: radial-gradient(circle, #06193d21 10%, rgba(0,0,0,1) 100%);
+}
+
+.spotify {
+    background: black;
+    background: radial-gradient(circle, #1ed76021 10%, rgba(0,0,0,1) 100%);
+}
+
+.youtube {
+    background: black;
+    background: radial-gradient(circle, #ff000021 10%, rgba(0,0,0,1) 100%);
+}
+
+.discord {
+    background: black;
+    background: radial-gradient(circle, #5865f221 10%, rgba(0,0,0,1) 100%);
+}
