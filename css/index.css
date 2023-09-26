@@ -292,8 +292,9 @@ a:hover {
 .social-info h2 {
     position: relative;
     margin-left: 20px;
-    padding-top: 4vh;
-    padding-bottom: 5px !important;
+    padding-top: 3.5vh;
+    font-size: 25px;
+    padding-bottom: 0px !important;
 }
 
 .social-info h3 {
