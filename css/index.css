@@ -501,6 +501,11 @@ canvas {
         display: flex;
     }
 
+    .page-container {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
     .description {
         position: fixed;
         top: 65px;
@@ -510,6 +515,7 @@ canvas {
         bottom: 0;
         right: 0;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     .description h3 {
