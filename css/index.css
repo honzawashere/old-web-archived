@@ -276,6 +276,10 @@ a:hover {
     display: flex;
 }
 
+.social-container a:hover {
+    text-decoration: none
+}
+
 .social-image {
     width: 100px;
     height: 100px;
