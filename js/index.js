@@ -2,7 +2,7 @@ let last_choice;
 
 function click_me_clicked() {
     document.querySelector("#page_container").classList.add("page-container-hidden")
-    document.querySelector("#particles-js").classList.add("particles-hide")
+    document.querySelector("#particles-js").remove()
     setTimeout(() => {
         document.querySelector("#main_page").classList.remove("main-page-hidden")
     }, 500)
