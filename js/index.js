@@ -20,10 +20,6 @@ function handle_clicks() {
         document.querySelector("#menu_option_1_phone").classList.add("option-selected")
         document.querySelector("#menu_option_2_phone").classList.remove("option-selected")
         document.querySelector("#menu_option_3_phone").classList.remove("option-selected")
-
-        document.querySelector("#description_1_phone").classList.remove("description-hidden")
-        document.querySelector("#description_2_phone").classList.add("description-hidden")
-        document.querySelector("#description_3_phone").classList.add("description-hidden")
     }
     document.querySelector("#menu_option_2").onclick = () => {
         document.querySelector("#menu_option_1").classList.remove("option-selected")
@@ -36,10 +32,6 @@ function handle_clicks() {
         document.querySelector("#menu_option_1_phone").classList.remove("option-selected")
         document.querySelector("#menu_option_2_phone").classList.add("option-selected")
         document.querySelector("#menu_option_3_phone").classList.remove("option-selected")
-
-        document.querySelector("#description_1_phone").classList.add("description-hidden")
-        document.querySelector("#description_2_phone").classList.remove("description-hidden")
-        document.querySelector("#description_3_phone").classList.add("description-hidden")
     }
     document.querySelector("#menu_option_3").onclick = () => {
         document.querySelector("#menu_option_1").classList.remove("option-selected")
@@ -52,10 +44,6 @@ function handle_clicks() {
         document.querySelector("#menu_option_1_phone").classList.remove("option-selected")
         document.querySelector("#menu_option_2_phone").classList.remove("option-selected")
         document.querySelector("#menu_option_3_phone").classList.add("option-selected")
-
-        document.querySelector("#description_1_phone").classList.add("description-hidden")
-        document.querySelector("#description_2_phone").classList.add("description-hidden")
-        document.querySelector("#description_3_phone").classList.remove("description-hidden")
     }
     document.querySelector("#my-skills-redirect").onclick = () => {
         document.querySelector("#menu_option_1").classList.remove("option-selected")
